@@ -1,45 +1,107 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Lurre</title>
-    <style>
-        body {
-            font-family: Georgia, serif;
-            background: #f8f5f2;
-            color: #333;
-            text-align: center;
-            padding-top: 120px;
-        }
+  <title>Lurre</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        h1 {
-            font-size: 4rem;
-            margin-bottom: 10px;
-        }
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: #f7f1ec;
+      color: #2f2926;
+      text-align: center;
+    }
 
-        p {
-            font-size: 1.3rem;
-            margin: 10px 0;
-        }
+    .hero {
+      min-height: 100vh;
+      padding: 80px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-        .coming-soon {
-            margin-top: 40px;
-            font-style: italic;
-            color: #888;
-        }
-    </style>
+    .brand {
+      font-size: 4.5rem;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    .tagline {
+      font-size: 1.5rem;
+      margin-top: 12px;
+      color: #7b5f56;
+    }
+
+    .intro {
+      max-width: 640px;
+      font-size: 1.2rem;
+      line-height: 1.7;
+      margin: 34px auto;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin-top: 24px;
+    }
+
+    .pill {
+      border: 1px solid #d7b8aa;
+      border-radius: 999px;
+      padding: 12px 18px;
+      background: rgba(255,255,255,0.45);
+      font-size: 1rem;
+    }
+
+    .button {
+      margin-top: 42px;
+      display: inline-block;
+      padding: 15px 28px;
+      border-radius: 999px;
+      background: #2f2926;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1rem;
+      letter-spacing: .5px;
+    }
+
+    .note {
+      margin-top: 24px;
+      font-style: italic;
+      color: #8f7a72;
+      font-size: .95rem;
+    }
+  </style>
 </head>
+
 <body>
+  <section class="hero">
+    <h1 class="brand">Lurre</h1>
 
-    <h1>Lurre</h1>
+    <div class="tagline">Stories you can hold.</div>
 
-    <p>Custom Creations</p>
-    <p>Memories</p>
-    <p>Keepsakes</p>
-    <p>Miniature Worlds</p>
+    <p class="intro">
+      Custom 3D printed keepsakes, memory pieces, miniature worlds,
+      and personalized gifts created for the people and moments worth remembering.
+    </p>
 
-    <div class="coming-soon">
-        Website Coming Soon
+    <div class="pill-row">
+      <div class="pill">Lithophanes</div>
+      <div class="pill">Memory Gifts</div>
+      <div class="pill">Miniature Scenes</div>
+      <div class="pill">Personalized Decor</div>
+      <div class="pill">Custom Orders</div>
     </div>
 
+    <a class="button" href="mailto:lisa@lurre.co">Request a Custom Piece</a>
+
+    <div class="note">
+      Not mass-produced. Not marketplace chaos. Made with meaning first.
+    </div>
+  </section>
 </body>
 </html>
