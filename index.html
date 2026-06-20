@@ -7,6 +7,7 @@
 <title>Lurre Studio</title>
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -17,7 +18,7 @@ body{
     font-family: Georgia, serif;
     background:#f8f4f1;
     color:#4d3936;
-    line-height:1.8;
+    line-height:1.7;
 }
 
 img{
@@ -33,37 +34,53 @@ img{
 
 /* Banner */
 
-.banner{
-    width:100%;
-}
-
 .banner img{
     width:100%;
     display:block;
 }
 
-/* Intro */
+/* About */
 
-.hero{
-    text-align:center;
-    padding:60px 20px;
+.about{
+    padding:40px 20px;
 }
 
-.hero h1{
+.about-wrapper{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+    flex-wrap:wrap;
+}
+
+.about-image{
+    flex:0 0 300px;
+}
+
+.about-image img{
+    width:300px;
+    border-radius:20px;
+}
+
+.about-text{
+    flex:1;
+    max-width:650px;
+}
+
+.about-text h1{
     font-size:3rem;
     margin-bottom:20px;
 }
 
-.hero p{
-    max-width:850px;
-    margin:auto;
-    font-size:1.1rem;
+.about-text p{
+    margin-bottom:18px;
+    font-size:1.05rem;
 }
 
 /* Buttons */
 
 .buttons{
-    margin-top:35px;
+    margin-top:25px;
 }
 
 .btn{
@@ -71,7 +88,7 @@ img{
     padding:14px 28px;
     border-radius:30px;
     text-decoration:none;
-    margin:8px;
+    margin-right:10px;
     transition:.3s;
 }
 
@@ -80,97 +97,50 @@ img{
     color:white;
 }
 
-.btn-primary:hover{
-    opacity:.9;
-}
-
 .btn-secondary{
     border:1px solid #d8c7bf;
-    color:#4d3936;
     background:white;
-}
-
-/* About */
-
-.about{
-    padding:80px 20px;
-}
-
-.about-wrapper{
-    display:flex;
-    align-items:center;
-    gap:60px;
-    flex-wrap:wrap;
-}
-
-.about-image{
-    flex:1;
-    min-width:300px;
-}
-
-.about-image img{
-    border-radius:20px;
-}
-
-.about-text{
-    flex:2;
-    min-width:300px;
-}
-
-.about-text h2{
-    font-size:2.5rem;
-    margin-bottom:20px;
-}
-
-.about-text p{
-    margin-bottom:20px;
+    color:#4d3936;
 }
 
 /* Footer */
 
 footer{
     text-align:center;
-    padding:50px 20px;
+    padding:40px 20px;
     color:#8a706a;
     font-size:.95rem;
 }
+
+@media (max-width:900px){
+
+    .about{
+        padding:30px 20px;
+    }
+
+    .about-wrapper{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .about-image img{
+        width:250px;
+        margin:auto;
+    }
+
+    .about-text h1{
+        font-size:2.2rem;
+    }
+}
+
 </style>
 </head>
 
 <body>
 
-<!-- ETSY BANNER -->
-
 <section class="banner">
     <img src="banner.jpg" alt="Lurre Studio">
 </section>
-
-<!-- HERO -->
-
-<section class="hero container">
-
-    <h1>Whimsical Creations for Creative Souls</h1>
-
-    <p>
-        From printable sticker collections and clipart bundles
-        to miniature worlds and custom keepsakes,
-        Lurre Studio is where imagination becomes something
-        you can hold.
-    </p>
-
-    <div class="buttons">
-        <a href="https://etsy.com/shop/LurreStudio" class="btn btn-primary">
-            Shop Etsy
-        </a>
-
-        <a href="mailto:hello@lurre.co" class="btn btn-secondary">
-            Contact Me
-        </a>
-    </div>
-
-</section>
-
-<!-- ABOUT -->
 
 <section class="about">
 
@@ -184,25 +154,36 @@ footer{
 
 <div class="about-text">
 
-<h2>Meet Lisa</h2>
+<h1>Hi, I'm Lisa</h1>
 
 <p>
-Hi, I'm Lisa — a maker, designer, and lifelong creative who
-loves turning ideas into something tangible.
+Welcome to Lurre Studio — a growing collection of whimsical digital artwork,
+printable sticker collections, miniature worlds, and creative projects inspired by
+curiosity, storytelling, and the joy of making.
 </p>
 
 <p>
-Whether I'm designing whimsical printable collections,
-experimenting with 3D printing, or building miniature scenes,
-I enjoy bringing imagination to life.
+Whether I'm designing new character collections, experimenting with 3D printing,
+building miniature scenes, or creating something entirely new, I love bringing
+imagination to life.
 </p>
 
 <p>
-Lurre Studio is a growing collection of creative projects
-inspired by curiosity, storytelling, and the joy of making.
-Every collection begins with a simple goal:
-create something people genuinely enjoy.
+New collections are added regularly, and every design is created with makers,
+crafters, and creative souls in mind.
 </p>
+
+<div class="buttons">
+
+<a href="https://etsy.com/shop/LurreStudio" class="btn btn-primary">
+Shop Etsy
+</a>
+
+<a href="mailto:hello@lurre.co" class="btn btn-secondary">
+Contact Me
+</a>
+
+</div>
 
 </div>
 
