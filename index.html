@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,9 +12,8 @@
   --cream:#f7f1ec;
   --blush:#eed6d1;
   --rose:#dba59d;
-  --brown:#3f312d;
+  --brown:#43332f;
   --gold:#d4b16d;
-  --sage:#a9ab95;
 }
 
 *{
@@ -26,58 +23,39 @@
 }
 
 body{
-  font-family:Georgia, serif;
+  font-family: Georgia, serif;
   background:var(--cream);
   color:var(--brown);
-  line-height:1.7;
+  line-height:1.8;
+}
+
+/* HERO */
+
+.hero-banner{
+  width:100%;
+  display:block;
 }
 
 .hero{
-
-  min-height:100vh;
-
-  background-image:
-  linear-gradient(
-      rgba(247,241,236,.90),
-      rgba(247,241,236,.90)
-  ),
-  url('Lurre-Etsy_background.jpeg');
-
-  background-size:cover;
-  background-position:center;
-
-  display:flex;
-  justify-content:center;
-  align-items:center;
-
   text-align:center;
-
-  padding:60px 20px;
+  padding:80px 20px;
 }
 
-.hero-content{
-  max-width:900px;
+.hero h1{
+  font-size:3rem;
+  margin-bottom:20px;
 }
 
-.logo{
-  width:700px;
-  max-width:85%;
-  margin-bottom:25px;
-}
-
-.tagline{
-  font-size:2rem;
-  color:#8a665f;
-  margin-bottom:25px;
-}
-
-.intro{
-  max-width:700px;
-  margin:0 auto 35px;
+.hero p{
+  max-width:800px;
+  margin:auto;
   font-size:1.2rem;
 }
 
+/* BUTTONS */
+
 .button-row{
+  margin-top:35px;
   display:flex;
   gap:15px;
   justify-content:center;
@@ -85,14 +63,9 @@ body{
 }
 
 .button{
-  display:inline-block;
-
-  padding:15px 28px;
-
-  border-radius:999px;
-
   text-decoration:none;
-
+  padding:14px 28px;
+  border-radius:999px;
   transition:.2s;
 }
 
@@ -102,29 +75,24 @@ body{
 }
 
 .secondary{
-  border:1px solid #c9b1a8;
-  color:var(--brown);
   background:white;
+  color:var(--brown);
+  border:1px solid #d8c8c2;
 }
 
 .button:hover{
   transform:translateY(-2px);
 }
 
+/* ABOUT */
+
 .about{
-
   max-width:1100px;
-
   margin:auto;
-
-  padding:100px 30px;
-
+  padding:80px 30px;
   display:grid;
-
-  grid-template-columns:300px 1fr;
-
-  gap:50px;
-
+  grid-template-columns:320px 1fr;
+  gap:60px;
   align-items:center;
 }
 
@@ -139,12 +107,14 @@ body{
 }
 
 .about p{
-  margin-bottom:20px;
+  margin-bottom:18px;
 }
+
+/* COLLECTIONS */
 
 .collections{
   background:white;
-  padding:100px 30px;
+  padding:90px 30px;
 }
 
 .collections h2{
@@ -154,27 +124,17 @@ body{
 }
 
 .grid{
-
   max-width:1200px;
-
   margin:auto;
-
   display:grid;
-
-  grid-template-columns:
-  repeat(auto-fit,minmax(250px,1fr));
-
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:25px;
 }
 
 .card{
-
   background:var(--cream);
-
-  padding:30px;
-
+  padding:35px;
   border-radius:20px;
-
   text-align:center;
 }
 
@@ -182,13 +142,29 @@ body{
   margin-bottom:15px;
 }
 
-.footer{
+/* ETSY CTA */
 
+.cta{
   text-align:center;
+  padding:90px 20px;
+}
 
+.cta h2{
+  font-size:2.5rem;
+  margin-bottom:20px;
+}
+
+.cta p{
+  max-width:700px;
+  margin:auto auto 30px;
+}
+
+/* FOOTER */
+
+footer{
+  text-align:center;
   padding:50px 20px;
-
-  color:#8b736c;
+  color:#8d756e;
 }
 
 @media(max-width:900px){
@@ -198,48 +174,36 @@ body{
   text-align:center;
 }
 
+.hero h1{
+  font-size:2.2rem;
+}
+
 }
 
 </style>
-
 </head>
 
 <body>
 
+<img src="banner.jpg" class="hero-banner" alt="Lurre Studio">
+
 <section class="hero">
 
-<div class="hero-content">
+<h1>Whimsical Creations for Creative Souls</h1>
 
-<img
-src="LURRE_LOGO.png"
-alt="Lurre Studio"
-class="logo">
-
-<div class="tagline">
-Made to inspire. Designed to delight.
-</div>
-
-<p class="intro">
-Whimsical digital collections, printable artwork,
-miniature worlds, and handcrafted creations designed
-to spark creativity and bring a little magic to everyday life.
+<p>
+From printable sticker collections and clipart bundles to miniature worlds and custom keepsakes, Lurre Studio is where imagination becomes something you can hold.
 </p>
 
 <div class="button-row">
 
-<a
-class="button primary"
-href="https://lurrestudio.etsy.com">
-Shop on Etsy
+<a href="https://lurrestudio.etsy.com" class="button primary">
+Shop Etsy
 </a>
 
-<a
-class="button secondary"
-href="mailto:hello@lurre.co">
-Custom Orders
+<a href="mailto:hello@lurre.co" class="button secondary">
+Contact Me
 </a>
-
-</div>
 
 </div>
 
@@ -247,10 +211,7 @@ Custom Orders
 
 <section class="about">
 
-<img
-src="LurreProfilePicture.jpeg"
-alt="Lisa"
-class="profile-image">
+<img src="lisa.jpg" alt="Lisa" class="profile-image">
 
 <div>
 
@@ -261,11 +222,11 @@ Hi, I'm Lisa — a maker, designer, and lifelong creative who loves turning idea
 </p>
 
 <p>
-Whether I'm designing whimsical digital artwork, building miniature scenes, experimenting with 3D printing, or creating custom gifts, I enjoy bringing imagination to life.
+Whether I'm designing whimsical artwork, creating printable collections, experimenting with 3D printing, or building miniature scenes, I enjoy bringing imagination to life.
 </p>
 
 <p>
-Lurre Studio is a collection of creative projects inspired by curiosity, storytelling, and the joy of making. Every collection begins with a simple goal: create something people genuinely enjoy.
+Lurre Studio is a growing collection of creative projects inspired by curiosity, storytelling, and the joy of making. Every design starts with one goal: create something people genuinely enjoy.
 </p>
 
 </div>
@@ -279,46 +240,47 @@ Lurre Studio is a collection of creative projects inspired by curiosity, storyte
 <div class="grid">
 
 <div class="card">
-<h3>Digital Collections</h3>
-<p>
-Printable artwork, sticker bundles, clipart collections, and creative resources.
-</p>
+<h3>Printable Sticker Collections</h3>
+<p>Whimsical themed bundles perfect for stickers, planners, scrapbooks, and creative projects.</p>
 </div>
 
 <div class="card">
-<h3>Miniature Worlds</h3>
-<p>
-Tiny scenes, decorative displays, and imaginative miniature creations.
-</p>
+<h3>Clipart & PNG Bundles</h3>
+<p>Commercial-use digital artwork designed for makers, crafters, and small businesses.</p>
 </div>
 
 <div class="card">
-<h3>3D Printed Creations</h3>
-<p>
-Lithophanes, keepsakes, personalized gifts, and custom designs.
-</p>
+<h3>3D Printed Keepsakes</h3>
+<p>Lithophanes, miniature displays, custom gifts, and meaningful memory pieces.</p>
 </div>
 
 <div class="card">
-<h3>Custom Requests</h3>
-<p>
-Have an idea? Let's create something together.
-</p>
+<h3>Custom Creative Projects</h3>
+<p>Have an idea? Let's create something unique together.</p>
 </div>
 
 </div>
 
 </section>
 
-<footer class="footer">
+<section class="cta">
+
+<h2>Visit LurreStudio on Etsy</h2>
 
 <p>
-Made with imagination, creativity, and probably too much coffee.
+New collections are added regularly, including printable artwork, sticker bundles, clipart collections, and creative resources for makers and small businesses.
 </p>
 
-<p>
-© 2026 Lurre Studio
-</p>
+<a href="https://lurrestudio.etsy.com" class="button primary">
+Browse the Shop
+</a>
+
+</section>
+
+<footer>
+
+<p>Made to inspire. Designed to delight.</p>
+<p>© 2026 Lurre Studio</p>
 
 </footer>
 
