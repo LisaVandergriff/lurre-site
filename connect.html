@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Connect | Lurre</title>
+
+    <meta
+        name="description"
+        content="Follow along with Lurre or bring something to the table. Stay connected as new ideas, projects, spaces, and stories take shape."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Italianno&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+
+        :root {
+            --cream: #f6f0e7;
+            --cream-light: #fcfaf6;
+            --brown: #342018;
+            --brown-soft: #6e5a4d;
+            --gold: #bf7e2d;
+            --gold-light: #d5a15c;
+            --line: #dfd2c3;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--cream);
+            color: var(--brown);
+            font-family: "Cormorant Garamond", Georgia, serif;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button,
+        input,
+        select {
+            font: inherit;
+        }
+
+
+        /* ================================
+           HEADER
+        ================================= */
+
+        header {
+            background: rgba(252, 250, 246, 0.98);
+            border-bottom: 1px solid rgba(52, 32, 24, 0.08);
+        }
+
+        .nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            min-height: 86px;
+            padding: 14px 32px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .brand-mark {
+            width: 52px;
+            height: 52px;
+            border: 1px solid var(--gold-light);
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-family: "Cormorant Garamond", Georgia, serif;
+            font-size: 32px;
+            line-height: 1;
+        }
+
+        .brand-name {
+            font-family: "Montserrat", sans-serif;
+            font-size: 17px;
+            letter-spacing: 0.32em;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            font-family: "Montserrat", sans-serif;
+            font-size: 10px;
+            font-weight: 500;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+        }
+
+        .nav-links a {
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--gold);
+        }
+
+
+        /* ================================
+           HERO
+        ================================= */
+
+        .hero {
+            position: relative;
+            min-height: 570px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(13, 8, 5, 0.88) 0%,
+                    rgba(13, 8, 5, 0.69) 31%,
+                    rgba(13, 8, 5, 0.20) 57%,
+                    rgba(13, 8, 5, 0.03) 100%
+                ),
+                url("Lurre_Background_hero1.png")
+                center center / cover no-repeat;
+
+            color: var(--white);
+
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-inner {
+            width: 92%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .hero-content {
+            width: 500px;
+            max-width: 100%;
+            text-align: center;
+            color: #fffaf3;
+        }
+
+        .hero-branding {
+            width: 300px;
+            max-width: 78%;
+            margin: 0 auto 8px;
+            display: block;
+        }
+
+        .hero-eyebrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+
+            font-family: "Montserrat", sans-serif;
+            font-size: 10px;
+            letter-spacing: 0.35em;
+            text-transform: uppercase;
+            color: var(--gold-light);
+
+            margin: 3px 0 13px;
+        }
+
+        .hero-eyebrow::before,
+        .hero-eyebrow::after {
+            content: "";
+            width: 55px;
+            height: 1px;
+            background: var(--gold-light);
+        }
+
+        .hero h1 {
+            font-size: clamp(43px, 5vw, 62px);
+            font-weight: 500;
+            line-height: 1;
+            margin-bottom: 4px;
+        }
+
+        .hero-script {
+            font-family: "Italianno", cursive;
+            font-size: clamp(35px, 4vw, 48px);
+            line-height: 1;
+            color: var(--gold-light);
+            margin: 9px 0 20px;
+        }
+
+        .hero p {
+            max-width: 470px;
+            margin: 0 auto;
+
+            font-size: 19px;
+            line-height: 1.45;
+            color: rgba(255,255,255,0.92);
+        }
+
+
+        /* ================================
+           CONNECT INTRO
+        ================================= */
+
+        .connect-section {
+            padding: 76px 30px 90px;
+        }
+
+        .section-heading {
+            max-width: 850px;
+            margin: 0 auto 50px;
+            text-align: center;
+        }
+
+        .section-eyebrow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+
+            font-family: "Montserrat", sans-serif;
+            font-size: 10px;
+            letter-spacing: 0.38em;
+            text-transform: uppercase;
+            color: var(--brown-soft);
+            margin-bottom: 13px;
+        }
+
+        .section-eyebrow::before,
+        .section-eyebrow::after {
+            content: "";
+            width: 70px;
+            height: 1px;
+            background: var(--gold-light);
+        }
+
+        .section-heading h2 {
+            font-size: clamp(38px, 5vw, 54px);
+            font-weight: 500;
+            line-height: 1.05;
+            margin-bottom: 14px;
+        }
+
+        .section-heading p {
+            font-size: 19px;
+            color: var(--brown-soft);
+        }
+
+
+        /* ================================
+           TWO CONNECT CARDS
+        ================================= */
+
+        .connect-grid {
+            max-width: 1040px;
+            margin: 0 auto;
+
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 28px;
+        }
+
+        .connect-card {
+            background: var(--cream-light);
+            border: 1px solid rgba(52, 32, 24, 0.09);
+            border-radius: 18px;
+            padding: 48px 45px 44px;
+            text-align: center;
+
+            box-shadow:
+                0 12px 35px rgba(52, 32, 24, 0.06);
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-symbol {
+            color: var(--gold);
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .connect-card h3 {
+            font-size: 31px;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            line-height: 1.15;
+        }
+
+        .card-script {
+            font-family: "Italianno", cursive;
+            color: var(--gold);
+            font-size: 37px;
+            line-height: 1.05;
+            margin: 8px 0 20px;
+        }
+
+        .card-copy {
+            max-width: 420px;
+            margin: 0 auto 28px;
+            font-size: 18px;
+            line-height: 1.55;
+            color: var(--brown-soft);
+        }
+
+
+        /* ================================
+           FOLLOW FORM
+        ================================= */
+
+        .follow-form {
+            margin-top: auto;
+        }
+
+        .email-row {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .follow-form input[type="email"] {
+            width: 100%;
+            min-width: 0;
+
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            background: var(--white);
+
+            padding: 14px 19px;
+            color: var(--brown);
+            outline: none;
+
+            font-family: "Cormorant Garamond", Georgia, serif;
+            font-size: 16px;
+        }
+
+        .follow-form input[type="email"]:focus {
+            border-color: var(--gold);
+        }
+
+        .follow-form input[type="email"]::placeholder {
+            color: #9d8e84;
+        }
+
+        .submit-button {
+            border: none;
+            border-radius: 999px;
+            background: var(--brown);
+            color: var(--white);
+
+            padding: 14px 22px;
+            cursor: pointer;
+
+            font-family: "Montserrat", sans-serif;
+            font-size: 9px;
+            font-weight: 500;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+
+            transition:
+                transform 0.2s ease,
+                background 0.2s ease;
+        }
+
+        .submit-button:hover {
+            background: #4b2d21;
+            transform: translateY(-1px);
+        }
+
+
+        /* ================================
+           INTERESTS
+        ================================= */
+
+        .interests {
+            border: 0;
+            margin: 12px 0 18px;
+            text-align: left;
+        }
+
+        .interests legend {
+            width: 100%;
+            text-align: center;
+            font-size: 15px;
+            color: var(--brown-soft);
+            margin-bottom: 11px;
+        }
+
+        .interest-options {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .interest-option {
+            position: relative;
+        }
+
+        .interest-option input {
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .interest-option span {
+            display: block;
+
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            background: var(--white);
+
+            padding: 8px 13px;
+
+            font-family: "Montserrat", sans-serif;
+            font-size: 9px;
+            letter-spacing: 0.06em;
+
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .interest-option input:checked + span {
+            background: var(--brown);
+            border-color: var(--brown);
+            color: var(--white);
+        }
+
+        .interest-option span:hover {
+            border-color: var(--gold);
+        }
+
+        .fine-print {
+            margin-top: 13px;
+            font-size: 14px;
+            color: #8a786d;
+        }
+
+
+        /* ================================
+           COLLABORATE CARD
+        ================================= */
+
+        .collaborate-list {
+            list-style: none;
+            margin: 2px auto 28px;
+            max-width: 390px;
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .collaborate-list li {
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            padding: 7px 12px;
+
+            font-family: "Montserrat", sans-serif;
+            font-size: 9px;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            color: var(--brown-soft);
+        }
+
+        .talk-button {
+            display: inline-block;
+            align-self: center;
+            margin-top: auto;
+
+            border-radius: 999px;
+            background: var(--gold);
+            color: var(--white);
+
+            padding: 14px 27px;
+
+            font-family: "Montserrat", sans-serif;
+            font-size: 9px;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+
+            transition:
+                transform 0.2s ease,
+                background 0.2s ease;
+        }
+
+        .talk-button:hover {
+            background: #aa6e25;
+            transform: translateY(-1px);
+        }
+
+
+        /* ================================
+           SMALL NOTE
+        ================================= */
+
+        .closing-note {
+            max-width: 780px;
+            margin: 55px auto 0;
+            text-align: center;
+        }
+
+        .closing-heart {
+            color: var(--gold);
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .closing-note p {
+            font-size: 17px;
+            color: var(--brown-soft);
+        }
+
+        .closing-note strong {
+            color: var(--brown);
+            font-weight: 600;
+        }
+
+
+        /* ================================
+           FOOTER
+        ================================= */
+
+        footer {
+            background: #241711;
+            color: rgba(255,255,255,0.82);
+            text-align: center;
+            padding: 46px 25px;
+        }
+
+        .footer-brand {
+            font-family: "Montserrat", sans-serif;
+            letter-spacing: 0.35em;
+            text-transform: uppercase;
+            font-size: 13px;
+            margin-bottom: 7px;
+        }
+
+        .footer-tagline {
+            font-family: "Italianno", cursive;
+            color: var(--gold-light);
+            font-size: 28px;
+            margin-bottom: 17px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin-bottom: 20px;
+
+            font-family: "Montserrat", sans-serif;
+            font-size: 8px;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
+
+        .footer-links a:hover {
+            color: var(--gold-light);
+        }
+
+        .copyright {
+            font-size: 13px;
+            color: rgba(255,255,255,0.52);
+        }
+
+
+        /* ================================
+           TABLET
+        ================================= */
+
+        @media (max-width: 850px) {
+
+            .nav {
+                padding: 13px 20px;
+                flex-wrap: wrap;
+                row-gap: 10px;
+            }
+
+            .nav-links {
+                gap: 20px;
+            }
+
+            .nav-links a {
+                font-size: 9px;
+                letter-spacing: 0.12em;
+            }
+
+            .brand-name {
+                font-size: 14px;
+            }
+
+            .hero {
+                min-height: 540px;
+                background-position: 62% center;
+            }
+
+            .hero::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: rgba(16, 9, 5, 0.20);
+            }
+
+            .hero-inner {
+                position: relative;
+                z-index: 1;
+            }
+
+            .hero-content {
+                width: 100%;
+                max-width: 470px;
+            }
+
+            .hero-branding {
+                width: 270px;
+            }
+
+            .connect-grid {
+                grid-template-columns: 1fr;
+                max-width: 600px;
+            }
+        }
+
+
+        /* ================================
+           PHONE
+        ================================= */
+
+        @media (max-width: 560px) {
+
+            .nav {
+                justify-content: center;
+            }
+
+            .brand {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .brand-mark {
+                width: 45px;
+                height: 45px;
+                font-size: 27px;
+            }
+
+            .nav-links {
+                width: 100%;
+                justify-content: center;
+                gap: 16px;
+            }
+
+            .nav-links a {
+                font-size: 8px;
+                letter-spacing: 0.09em;
+            }
+
+            .hero {
+                min-height: 510px;
+            }
+
+            .hero-inner {
+                width: 90%;
+            }
+
+            .hero-branding {
+                width: 235px;
+            }
+
+            .hero h1 {
+                font-size: 43px;
+            }
+
+            .hero-script {
+                font-size: 35px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+
+            .hero-eyebrow::before,
+            .hero-eyebrow::after {
+                width: 35px;
+            }
+
+            .connect-section {
+                padding: 58px 18px 70px;
+            }
+
+            .section-eyebrow::before,
+            .section-eyebrow::after {
+                width: 35px;
+            }
+
+            .connect-card {
+                padding: 38px 24px;
+            }
+
+            .email-row {
+                grid-template-columns: 1fr;
+            }
+
+            .submit-button {
+                width: 100%;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================
+         HEADER
+    ================================== -->
+
+    <header>
+
+        <nav class="nav">
+
+            <a class="brand" href="index.html">
+
+                <div class="brand-mark">
+                    L
+                </div>
+
+                <div class="brand-name">
+                    Lurre
+                </div>
+
+            </a>
+
+
+            <div class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="index.html#projects">
+                    Projects
+                </a>
+
+                <a href="index.html#about">
+                    About
+                </a>
+
+                <a href="connect.html">
+                    Connect
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =================================
+         HERO
+    ================================== -->
+
+    <section class="hero">
+
+        <div class="hero-inner">
+
+            <div class="hero-content">
+
+                <img
+                    src="Lurre_Branding_Overlay.png"
+                    alt="Lurre"
+                    class="hero-branding"
+                >
+
+                <div class="hero-eyebrow">
+                    Stay Connected
+                </div>
+
+                <h1>
+                    Come see what<br>
+                    happens next.
+                </h1>
+
+                <div class="hero-script">
+                    Ideas are better when they have somewhere to go.
+                </div>
+
+                <p>
+                    Follow the things taking shape inside Lurre —
+                    or pull up a chair and bring something of your
+                    own to the table.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         CONNECT
+    ================================== -->
+
+    <main>
+
+        <section class="connect-section">
+
+            <div class="section-heading">
+
+                <div class="section-eyebrow">
+                    Stay Connected
+                </div>
+
+                <h2>
+                    There’s more than one way to be<br>
+                    part of what comes next.
+                </h2>
+
+                <p>
+                    Follow the ideas as they grow — or help one of them grow.
+                </p>
+
+            </div>
+
+
+            <div class="connect-grid">
+
+
+                <!-- =========================
+                     FOLLOW ALONG
+                ========================== -->
+
+                <article class="connect-card">
+
+                    <div class="card-symbol">
+                        ♥
+                    </div>
+
+                    <h3>
+                        Follow Along
+                    </h3>
+
+                    <div class="card-script">
+                        Curious to see where this goes?
+                    </div>
+
+                    <p class="card-copy">
+                        Get occasional updates when something new is
+                        taking shape across Lurre, The Porch,
+                        Sadie’s World, and the Studio.
+                    </p>
+
+
+                    <form
+                        class="follow-form"
+                        action="https://buttondown.com/api/emails/embed-subscribe/LisaLurre"
+                        method="post"
+                    >
+
+                        <input
+                            type="hidden"
+                            name="metadata__signup_source"
+                            value="lurre-connect"
+                        >
+
+
+                        <div class="email-row">
+
+                            <input
+                                type="email"
+                                name="email"
+                                id="bd-email"
+                                placeholder="your@email.com"
+                                aria-label="Email address"
+                                required
+                            >
+
+                            <button
+                                class="submit-button"
+                                type="submit"
+                            >
+                                Follow Along →
+                            </button>
+
+                        </div>
+
+
+                        <fieldset class="interests">
+
+                            <legend>
+                                What would you like to hear about?
+                            </legend>
+
+                            <div class="interest-options">
+
+                                <label class="interest-option">
+
+                                    <input
+                                        type="checkbox"
+                                        name="metadata__interests"
+                                        value="lurre"
+                                    >
+
+                                    <span>
+                                        Lurre
+                                    </span>
+
+                                </label>
+
+
+                                <label class="interest-option">
+
+                                    <input
+                                        type="checkbox"
+                                        name="metadata__interests"
+                                        value="the-porch"
+                                    >
+
+                                    <span>
+                                        The Porch
+                                    </span>
+
+                                </label>
+
+
+                                <label class="interest-option">
+
+                                    <input
+                                        type="checkbox"
+                                        name="metadata__interests"
+                                        value="sadies-world"
+                                    >
+
+                                    <span>
+                                        Sadie’s World
+                                    </span>
+
+                                </label>
+
+
+                                <label class="interest-option">
+
+                                    <input
+                                        type="checkbox"
+                                        name="metadata__interests"
+                                        value="lurre-studio"
+                                    >
+
+                                    <span>
+                                        Lurre Studio
+                                    </span>
+
+                                </label>
+
+                            </div>
+
+                        </fieldset>
+
+
+                        <div class="fine-print">
+                            No schedule. No spam. Just the good stuff.
+                        </div>
+
+                    </form>
+
+                </article>
+
+
+                <!-- =========================
+                     BRING SOMETHING
+                ========================== -->
+
+                <article class="connect-card">
+
+                    <div class="card-symbol">
+                        ✦
+                    </div>
+
+                    <h3>
+                        Bring Something<br>
+                        to the Table
+                    </h3>
+
+                    <div class="card-script">
+                        See something here you could help grow?
+                    </div>
+
+                    <p class="card-copy">
+                        Lurre is growing one idea at a time.
+                        If you build, design, write, market,
+                        organize communities, understand SEO —
+                        or simply see an opportunity I haven’t
+                        thought of — I’d like to hear from you.
+                    </p>
+
+
+                    <ul class="collaborate-list">
+
+                        <li>Design</li>
+
+                        <li>Development</li>
+
+                        <li>Marketing</li>
+
+                        <li>SEO</li>
+
+                        <li>Community</li>
+
+                        <li>Creative</li>
+
+                    </ul>
+
+
+                    <a
+                        class="talk-button"
+                        href="mailto:hello@lurre.co?subject=I%20have%20something%20to%20bring%20to%20Lurre"
+                    >
+                        Let’s Talk →
+                    </a>
+
+                </article>
+
+            </div>
+
+
+            <div class="closing-note">
+
+                <div class="closing-heart">
+                    ♥
+                </div>
+
+                <p>
+                    You don't need to know exactly where you fit.
+                    <strong>
+                        If something here made you curious, that's enough.
+                    </strong>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =================================
+         FOOTER
+    ================================== -->
+
+    <footer>
+
+        <div class="footer-brand">
+            Lurre
+        </div>
+
+        <div class="footer-tagline">
+            Ideas become places.
+        </div>
+
+        <div class="footer-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="index.html#projects">
+                Projects
+            </a>
+
+            <a href="index.html#about">
+                About
+            </a>
+
+            <a href="connect.html">
+                Connect
+            </a>
+
+        </div>
+
+        <div class="copyright">
+            © 2026 Lurre
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

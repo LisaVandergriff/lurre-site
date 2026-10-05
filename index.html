@@ -124,13 +124,6 @@ a {
     color: #b57a3a;
 }
 
-.nav-button {
-    background: #38251d;
-    color: white !important;
-    padding: 14px 25px;
-    border-radius: 30px;
-}
-
 
 /* =========================================================
    HERO
@@ -167,17 +160,11 @@ a {
     color: #fffaf3;
 }
 
-
-/* Main Lurre Branding Graphic */
-
 .hero-branding {
     width: 330px;
     max-width: 78%;
     margin: 0 auto;
 }
-
-
-/* Handwritten Hero Tagline */
 
 .hero h1 {
     font-family: "Italianno", cursive;
@@ -188,9 +175,6 @@ a {
     margin: 4px 0 12px;
     letter-spacing: 0;
 }
-
-
-/* Gold Divider */
 
 .hero-divider {
     display: flex;
@@ -213,18 +197,12 @@ a {
     font-size: 15px;
 }
 
-
-/* Hero Description */
-
 .hero p {
     font-size: 21px;
     line-height: 1.35;
     max-width: 440px;
     margin: auto;
 }
-
-
-/* Hero Button */
 
 .hero-button {
     display: inline-block;
@@ -267,9 +245,6 @@ a {
     margin: 0 auto 35px;
 }
 
-
-/* Section Eyebrow */
-
 .eyebrow {
     display: flex;
     align-items: center;
@@ -290,9 +265,6 @@ a {
     height: 1px;
     background: #cda76e;
 }
-
-
-/* Section Heading */
 
 .section-heading h2 {
     font-size: clamp(38px, 4vw, 59px);
@@ -337,9 +309,6 @@ a {
     flex-direction: column;
 }
 
-
-/* Project Images */
-
 .project-image {
     height: 320px;
     overflow: hidden;
@@ -356,9 +325,6 @@ a {
     transform: scale(1.025);
 }
 
-
-/* Project Content */
-
 .project-content {
     padding: 18px 30px 28px;
     text-align: center;
@@ -374,9 +340,6 @@ a {
     line-height: 1.1;
     letter-spacing: .5px;
 }
-
-
-/* Handwritten Project Taglines */
 
 .project-tagline {
     font-family: "Italianno", cursive;
@@ -399,9 +362,6 @@ a {
     color: #b67a37;
 }
 
-
-/* Project Description */
-
 .project-description {
     font-size: 18px;
     line-height: 1.35;
@@ -409,9 +369,6 @@ a {
     margin: 0 auto 20px;
     max-width: 360px;
 }
-
-
-/* Project Buttons */
 
 .project-button {
     display: inline-block;
@@ -500,17 +457,69 @@ a {
     line-height: 1.45;
 }
 
-.next-button {
-    display: inline-block;
-    margin-top: 23px;
-    padding: 11px 30px;
-    border: 1px solid white;
+
+/* =========================================================
+   CONNECT TEASER
+========================================================= */
+
+.connect {
+    padding: 78px 5% 84px;
+    background: #f7f1e9;
+}
+
+.connect-heading {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 32px;
+}
+
+.connect-heading h2 {
+    font-size: clamp(40px, 4vw, 58px);
+    font-weight: 500;
+    line-height: 1.05;
+    margin-bottom: 13px;
+}
+
+.connect-heading p {
+    font-size: 20px;
+    color: #68544a;
+    max-width: 700px;
+    margin: auto;
+}
+
+.connect-teaser {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.connect-script {
+    font-family: "Italianno", cursive;
+    color: #b67a37;
+    font-size: 42px;
+    line-height: 1;
+    margin-bottom: 23px;
+}
+
+.connect-button {
+    border: 0;
     border-radius: 30px;
-    color: white;
-    text-decoration: none;
+    background: #38251d;
+    color: #fff;
+    padding: 14px 30px;
+    font-family: "Cormorant Garamond", Georgia, serif;
     text-transform: uppercase;
-    letter-spacing: 1.3px;
-    font-size: 13px;
+    letter-spacing: 1.2px;
+    font-size: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform .2s ease, opacity .2s ease;
+}
+
+.connect-button:hover {
+    transform: translateY(-2px);
+    opacity: .92;
 }
 
 
@@ -520,7 +529,7 @@ a {
 
 .about {
     padding: 70px 5%;
-    background: #f7f1e9;
+    background: #faf7f2;
 }
 
 .about-inner {
@@ -570,7 +579,14 @@ footer strong {
 @media (max-width: 900px) {
 
     .site-header {
-        height: 72px;
+        height: auto;
+        min-height: 72px;
+        padding: 10px 0;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        row-gap: 10px;
     }
 
     .brand-mark {
@@ -584,17 +600,14 @@ footer strong {
         letter-spacing: 6px;
     }
 
-    .nav-links a:not(.nav-button) {
-        display: none;
+    .nav-links {
+        gap: 20px;
     }
 
-    .nav-button {
-        padding: 10px 17px;
-        font-size: 11px !important;
+    .nav-links a {
+        font-size: 11px;
+        letter-spacing: 1.1px;
     }
-
-
-    /* Hero */
 
     .hero {
         min-height: 650px;
@@ -630,9 +643,6 @@ footer strong {
         font-size: 19px;
     }
 
-
-    /* Cards */
-
     .project-grid {
         grid-template-columns: 1fr;
         max-width: 600px;
@@ -641,9 +651,6 @@ footer strong {
     .project-image {
         height: 340px;
     }
-
-
-    /* What's Next */
 
     .whats-next {
         background-position: 65% center;
@@ -662,8 +669,16 @@ footer strong {
 
 @media (max-width: 520px) {
 
+    .site-header {
+        height: auto;
+        min-height: 72px;
+        padding: 10px 0;
+    }
+
     .nav {
         width: 94%;
+        flex-wrap: wrap;
+        row-gap: 10px;
     }
 
     .brand-name {
@@ -671,12 +686,17 @@ footer strong {
         font-size: 17px;
     }
 
-    .nav-button {
-        display: none;
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        gap: 18px;
+        padding-bottom: 2px;
     }
 
-
-    /* Hero */
+    .nav-links a {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
 
     .hero {
         min-height: 610px;
@@ -699,16 +719,13 @@ footer strong {
         width: 65px;
     }
 
-
-    /* Projects */
-
     .projects {
         padding-left: 18px;
         padding-right: 18px;
     }
 
     .eyebrow::before,
-    .eyrow::after {
+    .eyebrow::after {
         width: 45px;
     }
 
@@ -724,11 +741,12 @@ footer strong {
         height: 270px;
     }
 
-
-    /* What's Next */
-
     .whats-next {
         min-height: 390px;
+    }
+
+    .connect {
+        padding: 60px 18px 65px;
     }
 }
 
@@ -736,9 +754,7 @@ footer strong {
 
 </head>
 
-
 <body>
-
 
 <!-- ======================================================
      HEADER
@@ -760,7 +776,6 @@ footer strong {
 
     </a>
 
-
     <div class="nav-links">
 
         <a href="#home">
@@ -775,15 +790,8 @@ footer strong {
             About
         </a>
 
-        <a href="mailto:hello@lurre.co">
-            Contact
-        </a>
-
-        <a
-            href="#projects"
-            class="nav-button"
-        >
-            Explore Lurre →
+        <a href="connect.html">
+            Connect
         </a>
 
     </div>
@@ -809,18 +817,15 @@ footer strong {
 
 <div class="hero-copy">
 
-
     <img
         src="Lurre_Branding_Overlay.png"
         alt="Lurre"
         class="hero-branding"
     >
 
-
     <h1>
         Ideas become places.
     </h1>
-
 
     <div class="hero-divider">
 
@@ -830,13 +835,11 @@ footer strong {
 
     </div>
 
-
     <p>
         A home for things imagined, made, written,
         built — and occasionally gotten a little
         carried away with.
     </p>
-
 
     <a
         href="#projects"
@@ -844,7 +847,6 @@ footer strong {
     >
         Explore Lurre &nbsp; ↓
     </a>
-
 
 </div>
 
@@ -862,19 +864,15 @@ footer strong {
     class="projects"
 >
 
-
 <div class="section-heading">
-
 
     <div class="eyebrow">
         Inside Lurre
     </div>
 
-
     <h2>
         Different Places. Same Curious Mind.
     </h2>
-
 
     <p>
         Lurre is the home for the projects, spaces,
@@ -882,19 +880,15 @@ footer strong {
         Each one has its own world — and they all start here.
     </p>
 
-
 </div>
 
 
 <div class="project-grid">
 
 
-<!-- ======================================================
-     MEET ON THE PORCH
-====================================================== -->
+<!-- MEET ON THE PORCH -->
 
 <article class="project-card porch">
-
 
     <div class="project-image">
 
@@ -905,27 +899,20 @@ footer strong {
 
     </div>
 
-
     <div class="project-content">
-
 
         <h3>
             Meet On The Porch
         </h3>
 
-
         <div class="project-tagline">
             Come as you are. See who's here.
         </div>
 
-
         <p class="project-description">
-
             A social space built around presence and conversation
             instead of feeds, followers, and performance.
-
         </p>
-
 
         <a
             href="https://MeetOnThePorch.com"
@@ -936,18 +923,14 @@ footer strong {
             Visit The Porch →
         </a>
 
-
     </div>
 
 </article>
 
 
-<!-- ======================================================
-     SADIE'S WORLD
-====================================================== -->
+<!-- SADIE'S WORLD -->
 
 <article class="project-card sadie">
-
 
     <div class="project-image">
 
@@ -958,27 +941,20 @@ footer strong {
 
     </div>
 
-
     <div class="project-content">
-
 
         <h3>
             Sadie's World
         </h3>
 
-
         <div class="project-tagline">
             Something is waking up...
         </div>
 
-
         <p class="project-description">
-
             A darker, grown-up world of curiosity,
             reinvention, desire and storytelling.
-
         </p>
-
 
         <a
             href="https://SadiesWorld.co"
@@ -989,18 +965,14 @@ footer strong {
             Enter Sadie's World →
         </a>
 
-
     </div>
 
 </article>
 
 
-<!-- ======================================================
-     LURRE STUDIO
-====================================================== -->
+<!-- LURRE STUDIO -->
 
 <article class="project-card studio">
-
 
     <div class="project-image">
 
@@ -1011,29 +983,22 @@ footer strong {
 
     </div>
 
-
     <div class="project-content">
-
 
         <h3>
             Lurre Studio
         </h3>
 
-
         <div class="project-tagline">
             Made to inspire. Designed to delight.
         </div>
 
-
         <p class="project-description">
-
             The maker side of Lurre — miniatures,
             3D printing, whimsical creations, Etsy,
             and all the weird little things we decide
             absolutely must exist.
-
         </p>
-
 
         <a
             href="https://etsy.com/shop/LurreStudio"
@@ -1044,11 +1009,9 @@ footer strong {
             Visit The Studio →
         </a>
 
-
     </div>
 
 </article>
-
 
 </div>
 
@@ -1061,44 +1024,72 @@ footer strong {
 
 <section class="whats-next">
 
-
 <div class="next-inner">
 
-
 <div class="next-copy">
-
 
     <h2>
         And whatever comes next.
     </h2>
 
-
     <div class="next-divider">
         ─── ♥ ───
     </div>
 
-
     <p>
-
         Lurre isn't one product, one audience, or one idea.
 
         <br>
 
         It's where ideas get enough room to become something.
-
     </p>
-
-
-    <a
-        href="#about"
-        class="next-button"
-    >
-        Follow Along →
-    </a>
-
 
 </div>
 
+</div>
+
+</section>
+
+
+<!-- ======================================================
+     STAY CONNECTED
+====================================================== -->
+
+<section
+    id="connect"
+    class="connect"
+>
+
+<div class="connect-heading">
+
+    <div class="eyebrow">
+        Stay Connected
+    </div>
+
+    <h2>
+        There’s more than one way to be part of what comes next.
+    </h2>
+
+    <p>
+        Follow the ideas as they grow — or bring something
+        of your own to the table.
+    </p>
+
+</div>
+
+
+<div class="connect-teaser">
+
+    <div class="connect-script">
+        Curious to see where this goes?
+    </div>
+
+    <a
+        href="connect.html"
+        class="connect-button"
+    >
+        Connect With Lurre →
+    </a>
 
 </div>
 
@@ -1114,31 +1105,24 @@ footer strong {
     class="about"
 >
 
-
 <div class="about-inner">
-
 
     <div class="eyebrow">
         Behind Lurre
     </div>
 
-
     <h2>
         Hi, I'm Lisa.
     </h2>
 
-
     <p>
-
         I make things. Sometimes they turn into something bigger.
 
         Lurre is the home for the projects, spaces, stories,
         and slightly impulsive ideas I create — from places
         built for real human connection to fictional worlds,
         creative experiments, and whatever comes next.
-
     </p>
-
 
 </div>
 
@@ -1154,23 +1138,17 @@ footer strong {
 
 <footer>
 
-
 <strong>
     LURRE
 </strong>
 
-
 <br><br>
-
 
 Ideas become places.
 
-
 <br><br>
 
-
 © 2026 Lurre
-
 
 </footer>
 

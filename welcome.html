@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Welcome to Lurre</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Italianno&display=swap"
+    rel="stylesheet"
+>
+
+<style>
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    background: #faf7f2;
+    color: #38271f;
+    line-height: 1.5;
+}
+
+a {
+    color: inherit;
+}
+
+
+/* =========================================================
+   HEADER
+   MATCHES LURRE HOME
+========================================================= */
+
+.site-header {
+    height: 88px;
+    background: rgba(252, 249, 245, .98);
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    border-bottom: 1px solid rgba(122, 83, 50, .08);
+}
+
+.nav {
+    width: 92%;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+}
+
+.brand-mark {
+    width: 58px;
+    height: 58px;
+    border: 1px solid #c89a58;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+    line-height: 1;
+}
+
+.brand-name {
+    font-size: 27px;
+    letter-spacing: 9px;
+    font-weight: 500;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #b57a3a;
+}
+
+
+/* =========================================================
+   WELCOME HERO
+========================================================= */
+
+.welcome-hero {
+    min-height: calc(100vh - 88px);
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(13, 8, 5, .84) 0%,
+            rgba(13, 8, 5, .60) 34%,
+            rgba(13, 8, 5, .20) 65%,
+            rgba(13, 8, 5, .08) 100%
+        ),
+        url("Lurre_Background_hero1.png")
+        center center / cover no-repeat;
+}
+
+.welcome-inner {
+    width: 92%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.welcome-card {
+    width: 620px;
+    max-width: 100%;
+
+    background: rgba(250, 247, 242, .94);
+
+    padding: 48px 50px 44px;
+
+    box-shadow:
+        0 15px 50px rgba(20, 10, 5, .22);
+
+    border:
+        1px solid rgba(200, 154, 88, .18);
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #a36d35;
+    margin-bottom: 12px;
+}
+
+.welcome-card h1 {
+    font-size: clamp(48px, 4vw, 60px);
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -1px;
+    margin-bottom: 12px;
+
+    white-space: nowrap;
+}
+
+.script {
+    font-family: "Italianno", cursive;
+    color: #b67a37;
+    font-size: 42px;
+    line-height: 1;
+    margin-bottom: 24px;
+}
+
+.message {
+    font-size: 19px;
+    line-height: 1.5;
+    color: #4f3d34;
+    max-width: 500px;
+}
+
+.divider {
+    width: 58px;
+    height: 1px;
+    background: #c89a58;
+    margin: 27px 0 24px;
+}
+
+.note {
+    font-size: 15px;
+    line-height: 1.45;
+    color: #68564c;
+    max-width: 500px;
+}
+
+.explore-button {
+    display: inline-block;
+
+    margin-top: 28px;
+
+    padding: 13px 25px;
+
+    background: #38251d;
+    color: #fff;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-size: 12px;
+
+    transition:
+        transform .2s ease,
+        opacity .2s ease;
+}
+
+.explore-button:hover {
+    transform: translateY(-2px);
+    opacity: .92;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .site-header {
+        height: auto;
+        min-height: 72px;
+        padding: 10px 0;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    .brand-mark {
+        width: 46px;
+        height: 46px;
+        font-size: 30px;
+    }
+
+    .brand-name {
+        font-size: 20px;
+        letter-spacing: 6px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+        letter-spacing: 1.1px;
+    }
+
+    .welcome-hero {
+        min-height: calc(100vh - 72px);
+        background-position: 62% center;
+    }
+
+    .welcome-card {
+        width: 600px;
+    }
+
+    .welcome-card h1 {
+        font-size: 52px;
+    }
+}
+
+
+/* =========================================================
+   PHONE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .site-header {
+        height: auto;
+        min-height: 72px;
+        padding: 10px 0;
+    }
+
+    .nav {
+        width: 94%;
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    .brand-name {
+        letter-spacing: 4px;
+        font-size: 17px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        gap: 18px;
+        padding-bottom: 2px;
+    }
+
+    .nav-links a {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .welcome-hero {
+        min-height: calc(100vh - 72px);
+        padding: 35px 0;
+
+        background:
+            linear-gradient(
+                rgba(13, 8, 5, .55),
+                rgba(13, 8, 5, .55)
+            ),
+            url("Lurre_Background_hero1.png")
+            65% center / cover no-repeat;
+    }
+
+    .welcome-inner {
+        width: calc(100% - 36px);
+    }
+
+    .welcome-card {
+        width: 100%;
+        padding: 38px 28px 35px;
+    }
+
+    .welcome-card h1 {
+        font-size: clamp(39px, 10.5vw, 48px);
+        white-space: normal;
+    }
+
+    .script {
+        font-size: 37px;
+    }
+
+    .message {
+        font-size: 18px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- ======================================================
+     HEADER
+====================================================== -->
+
+<header class="site-header">
+
+<nav class="nav">
+
+    <a class="brand" href="index.html">
+
+        <div class="brand-mark">
+            L
+        </div>
+
+        <div class="brand-name">
+            LURRE
+        </div>
+
+    </a>
+
+
+    <div class="nav-links">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="index.html#projects">
+            Projects
+        </a>
+
+        <a href="index.html#about">
+            About
+        </a>
+
+        <a href="connect.html">
+            Connect
+        </a>
+
+    </div>
+
+</nav>
+
+</header>
+
+
+<!-- ======================================================
+     WELCOME
+====================================================== -->
+
+<main>
+
+<section class="welcome-hero">
+
+<div class="welcome-inner">
+
+    <div class="welcome-card">
+
+        <div class="eyebrow">
+            Welcome to Lurre
+        </div>
+
+        <h1>You're in.</h1>
+
+        <div class="script">
+            Glad you found your way here.
+        </div>
+
+        <p class="message">
+            You're officially part of what comes next.
+            I'll send a note when something new is taking
+            shape across Lurre.
+        </p>
+
+        <div class="divider"></div>
+
+        <p class="note">
+            No schedules. No inbox avalanche. Just the good
+            stuff — new ideas, growing projects, and the
+            occasional thing that gets wonderfully out of hand.
+        </p>
+
+        <a
+            href="index.html#projects"
+            class="explore-button"
+        >
+            Explore Lurre →
+        </a>
+
+    </div>
+
+</div>
+
+</section>
+
+</main>
+
+
+</body>
+</html>
