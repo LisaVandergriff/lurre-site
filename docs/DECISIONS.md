@@ -1,16 +1,13 @@
+
 # Lurre — Master Decisions
 
-> Last updated: October 5, 2026
+> Last updated: October 9, 2026
 >
-> This document is the source of truth for decisions that apply to the
-> Lurre parent brand, Lurre.co, and the relationship between projects
-> within the Lurre ecosystem.
+> This document is the source of truth for decisions that apply to the Lurre parent brand, Lurre.co, and the relationship between projects within the Lurre ecosystem.
 >
-> Each individual Lurre project maintains its own `docs/DECISIONS.md`
-> for project-specific decisions.
+> Each individual Lurre project maintains its own `docs/DECISIONS.md` for project-specific decisions.
 >
-> Ideas being discussed are NOT decisions. Do not add them here until
-> they have been intentionally adopted.
+> Ideas being discussed are NOT decisions. Do not add them here until they have been intentionally adopted.
 
 ---
 
@@ -18,8 +15,7 @@
 
 **Lurre** is the parent / umbrella brand.
 
-Lurre is not limited to one business model, product type, community,
-story, store, or creative discipline.
+Lurre is not limited to one business model, product type, community, story, store, or creative discipline.
 
 It exists as the home for ideas that may become:
 
@@ -32,8 +28,7 @@ It exists as the home for ideas that may become:
 - experiences
 - future projects that do not yet have names
 
-The core idea is that Lurre provides a home for ideas to become
-something real.
+The core idea is that Lurre provides a home for ideas to become something real.
 
 ---
 
@@ -104,11 +99,9 @@ Lurre's voice should feel:
 - lightly witty
 - confident without being self-important
 
-It can acknowledge that ideas sometimes grow beyond their original
-scope.
+It can acknowledge that ideas sometimes grow beyond their original scope.
 
-That is part of the personality of the brand rather than something to
-hide.
+That is part of the personality of the brand rather than something to hide.
 
 An established example of this tone is:
 
@@ -118,8 +111,7 @@ Another is:
 
 **"occasionally gotten a little carried away with."**
 
-The voice should not become overly formal simply because Lurre is the
-parent brand.
+The voice should not become overly formal simply because Lurre is the parent brand.
 
 ---
 
@@ -135,8 +127,9 @@ Preferred public form:
 
 The production website is hosted through Vercel.
 
-The Lurre site is maintained through GitHub and local development in
-VS Code.
+The Lurre site is maintained through GitHub and local development in VS Code.
+
+The root domain redirects to the `www.lurre.co` production destination.
 
 ---
 
@@ -154,15 +147,17 @@ Lurre
 
 This structure is intentionally expandable.
 
-New projects may be added without requiring Lurre itself to be
-redefined.
+New projects may be added without requiring Lurre itself to be redefined.
+
+The guiding operating principle is:
+
+**One brain. Separate projects. Shared learning.**
 
 ---
 
 # 7. PROJECT INDEPENDENCE
 
-Projects within Lurre are related but are NOT required to look or
-behave identically.
+Projects within Lurre are related but are NOT required to look or behave identically.
 
 Each project may have its own:
 
@@ -191,11 +186,9 @@ docs/
 └── DECISIONS.md
 ```
 
-The project's `DECISIONS.md` is the source of truth for decisions
-specific to that project.
+The project's `DECISIONS.md` is the source of truth for decisions specific to that project.
 
-The Lurre Master `DECISIONS.md` should contain only enough information
-about a child project to establish:
+The Lurre Master `DECISIONS.md` should contain only enough information about a child project to establish:
 
 - what the project is
 - where it belongs in the Lurre ecosystem
@@ -203,14 +196,13 @@ about a child project to establish:
 - major cross-project relationships
 - decisions that affect Lurre as a whole
 
-Detailed project canon belongs in the child project's own decision
-record.
+Detailed project canon belongs in the child project's own decision record.
 
 ---
 
 # 9. DECISION HIERARCHY
 
-Decision ownership should follow this rule:
+Decision ownership should follow this rule.
 
 ## Lurre Master
 
@@ -241,8 +233,7 @@ Use the project's file for:
 - project-specific technical architecture
 - project-specific content strategy
 
-If a decision affects both levels, summarize it here and record the
-full decision in the appropriate project file.
+If a decision affects both levels, summarize it here and record the full decision in the appropriate project file.
 
 ---
 
@@ -256,15 +247,13 @@ Primary domain:
 
 High-level purpose:
 
-A presence-first social space centered around spontaneous conversation,
-repeated presence, and the simple question:
+A presence-first social space centered around spontaneous conversation, repeated presence, and the simple question:
 
 **"Who's here?"**
 
 Meet on the Porch is not the same product as Lurre.
 
-Lurre may introduce and link to The Porch, but detailed Porch product
-decisions belong in:
+Lurre may introduce and link to The Porch, but detailed Porch product decisions belong in:
 
 ```text
 Meet on the Porch
@@ -272,9 +261,7 @@ Meet on the Porch
     └── DECISIONS.md
 ```
 
-The Porch's detailed feature set, community behavior, safety model,
-audience research, competitive research, and product philosophy should
-NOT be duplicated into this master file.
+The Porch's detailed feature set, community behavior, safety model, audience research, competitive research, and product philosophy should NOT be duplicated into this master file.
 
 ---
 
@@ -288,14 +275,11 @@ Primary domain:
 
 High-level purpose:
 
-An adult creative/storytelling world centered around mature female
-curiosity, fantasy, identity, and exploration.
+An adult creative/storytelling world centered around mature female curiosity, fantasy, identity, and exploration.
 
-Sadie's World intentionally has a darker and more sensual identity than
-the Lurre parent brand.
+Sadie's World intentionally has a darker and more sensual identity than the Lurre parent brand.
 
-Lurre may introduce and link to Sadie's World without forcing Sadie's
-World to adopt Lurre.co's warm cream visual system.
+Lurre may introduce and link to Sadie's World without forcing Sadie's World to adopt Lurre.co's warm cream visual system.
 
 Detailed Sadie's World decisions belong in:
 
@@ -305,16 +289,13 @@ Sadie's World
     └── DECISIONS.md
 ```
 
-Character canon, writing rules, adult-content direction, audience
-strategy, visual canon, and Sadie-specific decisions should NOT live in
-this master file.
+Character canon, writing rules, adult-content direction, audience strategy, visual canon, and Sadie-specific decisions should NOT live in this master file.
 
 ---
 
 # 12. LURRE STUDIO
 
-**Lurre Studio** is the maker / physical-product side of the Lurre
-ecosystem.
+**Lurre Studio** is the maker / physical-product side of the Lurre ecosystem.
 
 Current primary storefront:
 
@@ -336,9 +317,7 @@ That positioning has been superseded.
 
 Lurre Studio is now one project within the broader Lurre ecosystem.
 
-Detailed product, licensing, pricing, marketplace, and maker decisions
-belong in Lurre Studio's own project records rather than this master
-file.
+Detailed product, licensing, pricing, marketplace, and maker decisions belong in Lurre Studio's own project records rather than this master file.
 
 ---
 
@@ -355,8 +334,7 @@ Its job is to:
 5. allow visitors to follow what develops next
 6. provide a way for people with useful skills or ideas to make contact
 
-Lurre.co should NOT attempt to reproduce the full functionality or
-content of each child project.
+Lurre.co should NOT attempt to reproduce the full functionality or content of each child project.
 
 It introduces.
 
@@ -375,9 +353,7 @@ confirm.html
 welcome.html
 ```
 
-Purpose:
-
-### `index.html`
+## index.html
 
 Main Lurre landing page.
 
@@ -390,7 +366,7 @@ Introduces:
 - About
 - path to Connect
 
-### `connect.html`
+## connect.html
 
 Connection hub.
 
@@ -399,18 +375,25 @@ Provides two primary paths:
 - Follow Along
 - Bring Something to the Table
 
-### `confirm.html`
+## confirm.html
 
 Newsletter subscription confirmation landing page.
 
-Used after someone submits their subscription and needs to confirm their
-email address.
+Used after someone submits their subscription and needs to confirm their email address.
 
-### `welcome.html`
+## welcome.html
 
 Confirmed-subscriber landing page.
 
 Used after email confirmation is complete.
+
+## Planned: privacy.html
+
+Dedicated Lurre Privacy & Disclosure page.
+
+Not yet created.
+
+Implementation is deferred while the Microsoft 365 / Global Admin email issue remains unresolved.
 
 ---
 
@@ -428,8 +411,7 @@ header button has been intentionally removed.
 
 Reason:
 
-It duplicated the existing Projects navigation and added unnecessary
-visual weight.
+It duplicated the existing Projects navigation and added unnecessary visual weight.
 
 Do not reintroduce a fifth header CTA without a new functional reason.
 
@@ -437,19 +419,17 @@ Do not reintroduce a fifth header CTA without a new functional reason.
 
 # 16. "EXPLORE LURRE" CTA RULE
 
-Removing the header button does NOT mean the phrase "Explore Lurre"
-cannot be used elsewhere.
+Removing the header button does NOT mean the phrase "Explore Lurre" cannot be used elsewhere.
 
 Contextual calls-to-action remain appropriate.
 
-Examples currently retained include:
+The Welcome-page **EXPLORE LURRE →** button is intentionally retained.
 
-- Home hero exploration CTA
-- Welcome-page Explore Lurre button
+The approved Home hero does not currently contain an Explore Lurre button.
 
 The distinction is:
 
-**Redundant header navigation was removed. Contextual CTAs remain.**
+**Redundant header navigation was removed. Contextual CTAs may remain where they serve a real purpose.**
 
 ---
 
@@ -467,6 +447,14 @@ The approved Lurre.co direction is:
 - polished editorial feel
 
 The site should feel creative and warm rather than corporate.
+
+Established palette includes:
+
+```text
+Cream: #faf7f2
+Brown: #38271f
+Gold:  #c89a58
+```
 
 ---
 
@@ -497,8 +485,7 @@ The Lurre header uses:
 
 This simple treatment is intentional.
 
-Do NOT replace the header mark with the more ornate full Lurre branding
-art unless the overall header design is intentionally reconsidered.
+Do NOT replace the header mark with the more ornate full Lurre branding art unless the overall header design is intentionally reconsidered.
 
 The header should remain visually light.
 
@@ -528,8 +515,7 @@ Lurre_MainLogo.png
 
 for the hero overlay.
 
-The MainLogo asset may have other uses, but it is not the default hero
-overlay.
+The MainLogo asset may have other uses, but it is not the default hero overlay.
 
 ---
 
@@ -541,11 +527,9 @@ Current established Home hero language includes:
 
 Supporting concept:
 
-**A home for things imagined, made, written, built — and occasionally
-gotten a little carried away with.**
+**A home for things imagined, made, written, built — and occasionally gotten a little carried away with.**
 
-The hero establishes Lurre itself before introducing individual
-projects.
+The hero establishes Lurre itself before introducing individual projects.
 
 ---
 
@@ -565,8 +549,7 @@ Current featured projects:
 2. Sadie's World
 3. Lurre Studio
 
-The project cards should link visitors out to the actual project or
-store rather than trying to recreate each project inside Lurre.co.
+The project cards should link visitors out to the actual project or store rather than trying to recreate each project inside Lurre.co.
 
 ---
 
@@ -656,8 +639,7 @@ The Lurre home page intentionally includes the idea:
 
 This communicates that Lurre is designed to expand.
 
-Future projects do not need to be predicted or represented by empty
-placeholder cards.
+Future projects do not need to be predicted or represented by empty placeholder cards.
 
 Add them when they become real enough to introduce.
 
@@ -677,8 +659,7 @@ Current direction includes:
 
 Supporting copy:
 
-**Follow the ideas as they grow — or bring something of your own to the
-table.**
+**Follow the ideas as they grow — or bring something of your own to the table.**
 
 Script line:
 
@@ -700,8 +681,7 @@ For visitors who want updates as projects evolve.
 
 ## Bring Something to the Table
 
-For people who see something they may be able to help build, improve,
-market, design, organize, or grow.
+For people who see something they may be able to help build, improve, market, design, organize, or grow.
 
 These two intentions should remain distinct.
 
@@ -717,8 +697,7 @@ The established collaboration concept is:
 
 **Bring Something to the Table**
 
-The tone should feel open and curious rather than like a corporate
-recruiting page.
+The tone should feel open and curious rather than like a corporate recruiting page.
 
 Current areas of possible contribution include:
 
@@ -735,17 +714,17 @@ Public collaboration contact:
 
 Current Connect-page email CTA uses this address.
 
+The mailbox's final Microsoft 365 configuration remains pending.
+
 ---
 
 # 30. CONNECT CLOSING PRINCIPLE
 
 Established closing copy:
 
-**You don't need to know exactly where you fit. If something here made
-you curious, that's enough.**
+**You don't need to know exactly where you fit. If something here made you curious, that's enough.**
 
-This captures the intended low-pressure nature of Lurre discovery and
-collaboration.
+This captures the intended low-pressure nature of Lurre discovery and collaboration.
 
 ---
 
@@ -765,8 +744,7 @@ Newsletter name:
 
 Buttondown is infrastructure.
 
-It should not become the visible identity of the Lurre brand where
-custom Lurre presentation is possible.
+It should not become the visible identity of the Lurre brand where custom Lurre presentation is possible.
 
 ---
 
@@ -774,10 +752,7 @@ custom Lurre presentation is possible.
 
 Current Lurre newsletter description:
 
-**Lurre is where ideas become places — communities, stories, creative
-projects, and whatever comes next. Follow along as they take shape,
-evolve, and occasionally become something much bigger than originally
-planned.**
+**Lurre is where ideas become places — communities, stories, creative projects, and whatever comes next. Follow along as they take shape, evolve, and occasionally become something much bigger than originally planned.**
 
 ---
 
@@ -791,12 +766,9 @@ Long-term desired sender identity:
 
 **Lisa at Lurre <lisalurre@lurre.co>**
 
-This custom sender should be configured after the Microsoft 365 /
-Global Admin issue affecting the Lurre domain email environment has
-been resolved.
+This custom sender should be configured after the Microsoft 365 / Global Admin issue affecting the Lurre domain email environment has been resolved.
 
-Do not build long-term email identity around a temporary personal
-Outlook address.
+Do not build long-term email identity around a temporary personal Outlook address.
 
 ---
 
@@ -804,7 +776,7 @@ Outlook address.
 
 Long-term intended roles:
 
-### `lisalurre@lurre.co`
+## lisalurre@lurre.co
 
 Primary Lurre sender/reply identity.
 
@@ -815,7 +787,7 @@ Intended for:
 - replies from subscribers
 - Lisa's Lurre identity
 
-### `hello@lurre.co`
+## hello@lurre.co
 
 Public collaboration/contact address.
 
@@ -825,8 +797,13 @@ Intended for:
 - Bring Something to the Table
 - general Lurre contact
 
-These may eventually route into the same underlying mailbox depending
-on the final Microsoft 365 configuration.
+These may eventually route into the same underlying mailbox depending on the final Microsoft 365 configuration.
+
+**Status October 9, 2026:**
+
+Microsoft 365 / Global Admin access remains an unresolved dependency.
+
+Do not assume the intended mailbox configuration is fully operational until verified.
 
 ---
 
@@ -863,8 +840,7 @@ This field should remain hidden on the custom Lurre form.
 
 # 36. NEWSLETTER INTEREST METADATA
 
-The Lurre signup form allows visitors to indicate what they are
-interested in hearing about.
+The Lurre signup form allows visitors to indicate what they are interested in hearing about.
 
 Current metadata field:
 
@@ -888,8 +864,9 @@ Display labels:
 - Sadie's World
 - Lurre Studio
 
-These interests allow future newsletter content to become more relevant
-without requiring separate newsletter systems for every project.
+These interests allow future newsletter content to become more relevant without requiring separate newsletter systems for every project.
+
+The final subscriber-record verification remains outstanding.
 
 ---
 
@@ -902,11 +879,9 @@ Current established settings include:
 - Subscriber cleanup: ON
 - Welcome email: ON
 
-Buttondown's paid-only customization features are not required at the
-current stage.
+Buttondown's paid-only customization features are not required at the current stage.
 
-Do not upgrade solely for cosmetic customization unless there is a
-clear benefit.
+Do not upgrade solely for cosmetic customization unless there is a clear benefit.
 
 ---
 
@@ -933,7 +908,15 @@ https://lurre.co/confirm
 https://lurre.co/welcome
 ```
 
-These clean routes must be verified in production.
+These clean routes and the complete new-subscriber experience must be verified in production.
+
+**October 9 status:**
+
+The pages and integration have been created.
+
+A complete fresh-subscriber test, including Buttondown metadata verification, remains pending.
+
+Jenn's test is the next planned validation.
 
 ---
 
@@ -941,8 +924,7 @@ These clean routes must be verified in production.
 
 Purpose:
 
-Tell the visitor that their subscription request was received and that
-they need to confirm their email.
+Tell the visitor that their subscription request was received and that they need to confirm their email.
 
 Established primary content:
 
@@ -956,8 +938,7 @@ Script:
 
 The page should remain simple.
 
-It is a utility step in the signup flow, not another marketing landing
-page.
+It is a utility step in the signup flow, not another marketing landing page.
 
 ---
 
@@ -965,8 +946,7 @@ page.
 
 Purpose:
 
-Acknowledge successful confirmation and return the visitor to the Lurre
-world.
+Acknowledge successful confirmation and return the visitor to the Lurre world.
 
 Established primary content:
 
@@ -988,8 +968,7 @@ button remains appropriate on this page.
 
 # 41. CONFIRM + WELCOME VISUAL RULE
 
-Confirm and Welcome intentionally use a simpler visual hierarchy than
-Home and Connect.
+Confirm and Welcome intentionally use a simpler visual hierarchy than Home and Connect.
 
 They share:
 
@@ -1000,8 +979,7 @@ They share:
 - script accent
 - espresso and gold palette
 
-They do NOT need the large Lurre branding overlay used on the primary
-Home and Connect experiences.
+They do NOT need the large Lurre branding overlay used on the primary Home and Connect experiences.
 
 They are paired utility pages and should remain visually related.
 
@@ -1023,8 +1001,7 @@ Current general email direction:
 
 Buttondown custom CSS requires a paid tier and is intentionally deferred.
 
-Do not pay solely to reproduce the full website design inside email at
-this stage.
+Do not pay solely to reproduce the full website design inside email at this stage.
 
 ---
 
@@ -1036,11 +1013,9 @@ Current simplified newsletter header:
 
 *Ideas become places.*
 
-Raw HTML should not be placed into Buttondown fields that render it as
-literal text.
+Raw HTML should not be placed into Buttondown fields that render it as literal text.
 
-Use supported Markdown/plain formatting unless paid/custom
-functionality is intentionally adopted.
+Use supported Markdown/plain formatting unless paid/custom functionality is intentionally adopted.
 
 ---
 
@@ -1062,17 +1037,13 @@ This deliberately keeps Lisa present as the person behind Lurre.
 
 # 45. FUTURE NEWSLETTER VISUAL DIRECTION
 
-If greater Buttondown customization becomes worthwhile later, the
-preferred direction is:
+If greater Buttondown customization becomes worthwhile later, the preferred direction is:
 
-**dark espresso atmosphere → warm cream reading area → restrained gold
-Lurre details**
+**dark espresso atmosphere → warm cream reading area → restrained gold Lurre details**
 
-The goal is NOT full dark-mode email with large amounts of white body
-text.
+The goal is NOT full dark-mode email with large amounts of white body text.
 
-The preferred experience is closer to a warm letter presented inside
-the darker Lurre world.
+The preferred experience is closer to a warm letter presented inside the darker Lurre world.
 
 This is a future direction, not a current implementation requirement.
 
@@ -1084,15 +1055,13 @@ Buttondown also provides a hosted public subscription page.
 
 The custom Lurre Connect page is the preferred subscription experience.
 
-Buttondown's hosted page may remain available as infrastructure but
-should not drive the visual identity of Lurre.
+Buttondown's hosted page may remain available as infrastructure but should not drive the visual identity of Lurre.
 
 ---
 
 # 47. SOCIAL LINKS
 
-Lurre social links have not yet been finalized for the parent site /
-newsletter.
+Lurre social links have not yet been finalized for the parent site / newsletter.
 
 Do not add random or incomplete social accounts simply to fill space.
 
@@ -1102,30 +1071,96 @@ Add social links when the intended Lurre-level channels are clear.
 
 # 48. SHARE IMAGE
 
-A deliberate Lurre social/share image has not yet been finalized.
+**Updated October 9, 2026**
 
-Buttondown's share-image field may remain blank until an intentional
-Lurre share asset is created.
+The official Lurre website social-sharing image has been created and deployed.
 
-Do not use an arbitrary image simply to fill the setting.
+Canonical asset:
+
+```text
+Lurre_SharingSite_hero1.png
+```
+
+Image dimensions:
+
+```text
+1734 × 907 pixels
+```
+
+The image features Lurre's own branding and the established line:
+
+**Ideas become places.**
+
+It represents the parent Lurre brand rather than an individual child project.
+
+The Home page includes Open Graph and Twitter/X social-preview metadata referencing:
+
+```text
+https://lurre.co/Lurre_SharingSite_hero1.png
+```
+
+The image must remain accessible through the production website.
+
+## Verified result
+
+On October 9, 2026, an iMessage link preview was confirmed displaying the correct Lurre sharing image.
+
+The initial test displayed The Porch image.
+
+Investigation identified that the updated local Git commit had not yet been pushed to GitHub.
+
+After syncing the commit and allowing the production deployment to update, the correct Lurre preview appeared.
+
+**Website social-sharing image: COMPLETE.**
+
+## Separate Buttondown setting
+
+Buttondown's own share-image configuration is separate from the website's Open Graph metadata.
+
+Do not mark the Buttondown share-image task complete until that setting has been explicitly configured and verified.
 
 ---
 
 # 49. PRIVACY & DISCLOSURE
 
-Lurre should eventually have a dedicated:
+**Updated October 9, 2026**
+
+Lurre will have a dedicated:
 
 **Privacy & Disclosure**
 
 page.
 
-The footer should eventually provide access to it.
+The footer will provide access to it.
 
-Individual projects may require their own privacy/disclosure language
-depending on what they collect and how they operate.
+The policy should address:
 
-A Lurre master policy should not automatically replace project-specific
-requirements.
+- newsletter email collection
+- selected newsletter interests
+- signup-source metadata
+- Buttondown as a third-party subscription provider
+- unsubscribe and data-request options
+- applicable cookies and analytics actually used
+- relevant affiliate, promotional, or product disclosures
+- an appropriate public privacy contact
+
+Do not claim tracking, analytics, or data-processing practices that have not been verified.
+
+Individual projects may require their own privacy/disclosure language depending on what they collect and how they operate.
+
+A Lurre master policy should not automatically replace project-specific requirements.
+
+## Current status
+
+**ON HOLD — Microsoft 365 / Global Admin dependency**
+
+The page has not been implemented.
+
+The final public contact email should be settled after the Microsoft 365 email administration issue is resolved.
+
+Do not create a temporary public privacy contact merely to complete the page.
+
+Resume drafting and implementation after the email decision is finalized.
 
 ---
 
@@ -1142,8 +1177,7 @@ Current Lurre.co development/deployment stack:
 
 The architecture should remain as simple as practical.
 
-Do not introduce frameworks, databases, or additional services without
-a real product requirement.
+Do not introduce frameworks, databases, or additional services without a real product requirement.
 
 ---
 
@@ -1186,11 +1220,11 @@ www.lurre.co
 lurre-site.vercel.app
 ```
 
-GitHub pushes to the production branch should trigger Vercel
-deployment.
+GitHub pushes to the production branch should trigger Vercel deployment.
 
-Do not manually recreate deployments when normal GitHub/Vercel
-deployment is working.
+Do not manually recreate deployments when normal GitHub/Vercel deployment is working.
+
+The October 9 social-preview fix confirmed the existing GitHub-to-Vercel deployment workflow.
 
 ---
 
@@ -1212,40 +1246,64 @@ rather than requiring visitors or external services to see:
 /welcome.html
 ```
 
-Routing/clean URL configuration should be handled at the site/Vercel
-level rather than by creating duplicate pages.
+Routing/clean URL configuration should be handled at the site/Vercel level rather than by creating duplicate pages.
+
+Production verification remains on the checklist.
 
 ---
 
 # 54. SOURCE CONTROL RULE
 
+**Updated October 9, 2026**
+
 Local file state and deployed production state are not the same thing.
 
-A change is not considered deployed merely because it has been saved in
-VS Code.
+A change is not considered deployed merely because it has been saved in VS Code.
 
 Normal workflow:
 
 ```text
 Edit
-↓
+  ↓
 Save
-↓
+  ↓
 Review locally
-↓
+  ↓
 Stage
-↓
+  ↓
 Commit
-↓
+  ↓
 Push to GitHub main
-↓
+  ↓
 Vercel deploys
-↓
+  ↓
 Verify production
 ```
 
-Do not push visual/code changes merely to see what they look like if
-they can be reviewed locally first.
+Do not push visual/code changes merely to see what they look like if they can be reviewed locally first.
+
+## October 9 deployment lesson
+
+A local Git commit does NOT mean the production website has received the change.
+
+The social-sharing image existed locally and was included in the committed work, but the public image URL initially returned a 404.
+
+Git Graph showed that local `main` was ahead of `origin/main`.
+
+Using VS Code's **Sync Changes** action pushed the commit to GitHub.
+
+Vercel then deployed the updated site.
+
+The social-sharing image became available, and iMessage displayed the correct preview.
+
+**Required verification principle:**
+
+Do not mark a website feature complete until its production behavior has been checked.
+
+For social-sharing images, verify both:
+
+1. The image's public URL loads.
+2. A real link preview displays the intended image.
 
 ---
 
@@ -1263,12 +1321,17 @@ These indicators describe Git state.
 
 They do NOT necessarily mean the file is unsaved.
 
-The editor-tab unsaved indicator should be used to determine whether
-current edits still need to be saved.
+The editor-tab unsaved indicator should be used to determine whether current edits still need to be saved.
+
+A committed change may still require a push or sync before it reaches GitHub.
+
+A `.DS_Store` modification is unrelated to the website feature itself and should not be included merely because it appears in Source Control.
 
 ---
 
 # 56. CURRENT LURRE SITE ASSETS
+
+**Updated October 9, 2026**
 
 Current important Lurre parent-site assets include:
 
@@ -1276,31 +1339,35 @@ Current important Lurre parent-site assets include:
 Lurre_Background_hero1.png
 Lurre_Branding_Overlay.png
 Lurre_MainLogo.png
+Lurre_SharingSite_hero1.png
 Lurre_Studio_hero1_landingpage.png
 SadiesWorld_hero1_landingpage.png
 ThePorch_hero1_landingpage.jpg
 ```
 
+The sharing image is now an approved production asset.
+
 Do not rename working assets casually.
 
-If filenames are changed later, update every page referencing them
-before deployment.
+If filenames are changed later, update every page and metadata reference before deployment.
+
+Filename capitalization and extensions must match exactly.
 
 ---
 
 # 57. RESPONSIVE NAVIGATION
 
-Removing the old header Explore Lurre button must NOT cause the real
-navigation to disappear on tablet/mobile.
+Removing the old header Explore Lurre button must NOT cause the real navigation to disappear on tablet/mobile.
 
-HOME, PROJECTS, ABOUT, and CONNECT should remain accessible at smaller
-screen sizes.
+HOME, PROJECTS, ABOUT, and CONNECT should remain accessible at smaller screen sizes.
 
-Current responsive strategy allows the navigation to wrap beneath the
-brand when necessary.
+Current responsive strategy allows the navigation to wrap beneath the brand when necessary.
 
-Mobile usability takes priority over preserving a single-line desktop
-header layout.
+Mobile usability takes priority over preserving a single-line desktop header layout.
+
+The Home and Connect responsive header treatments have been updated.
+
+A final live mobile walkthrough remains outstanding.
 
 ---
 
@@ -1308,28 +1375,21 @@ header layout.
 
 Lurre may introduce visitors to its child projects.
 
-Child projects may also identify themselves as part of Lurre where
-appropriate.
+Child projects may also identify themselves as part of Lurre where appropriate.
 
-However, cross-promotion should feel like discovering another room in
-the same larger creative world.
+However, cross-promotion should feel like discovering another room in the same larger creative world.
 
-It should not feel like aggressive funneling between unrelated
-products.
+It should not feel like aggressive funneling between unrelated products.
 
 ---
 
 # 59. CROSS-PROJECT DATA
 
-Do not assume that joining one Lurre project automatically means a user
-has joined every other project.
+Do not assume that joining one Lurre project automatically means a user has joined every other project.
 
-Newsletter interest metadata may be shared at the Lurre level because
-the subscriber explicitly chooses interests.
+Newsletter interest metadata may be shared at the Lurre level because the subscriber explicitly chooses interests.
 
-Future accounts, communities, memberships, or private information
-should not automatically be shared across projects without an
-intentional architecture and appropriate user expectations.
+Future accounts, communities, memberships, or private information should not automatically be shared across projects without an intentional architecture and appropriate user expectations.
 
 ---
 
@@ -1345,11 +1405,9 @@ Use current canonical project names:
 
 **Lurre Studio**
 
-Do not casually shorten or rename projects in official site copy if it
-creates ambiguity.
+Do not casually shorten or rename projects in official site copy if it creates ambiguity.
 
-"The Porch" may be used conversationally after Meet on the Porch has
-been clearly established.
+"The Porch" may be used conversationally after Meet on the Porch has been clearly established.
 
 ---
 
@@ -1387,8 +1445,7 @@ for the primary Porch domain.
 
 A future idea does not automatically become a Lurre project.
 
-Before adding something to the official ecosystem, it should have
-enough definition to answer:
+Before adding something to the official ecosystem, it should have enough definition to answer:
 
 1. What is it?
 2. Who is it for?
@@ -1406,8 +1463,7 @@ The website does not need to publish every idea.
 
 Before adding a decision to this file, ask:
 
-**Does this affect Lurre as the parent brand, Lurre.co, shared
-infrastructure, or more than one Lurre project?**
+**Does this affect Lurre as the parent brand, Lurre.co, shared infrastructure, or more than one Lurre project?**
 
 If yes:
 
@@ -1431,17 +1487,27 @@ When a significant decision is made:
 
 1. Implement it where appropriate.
 2. Update the relevant `DECISIONS.md`.
-3. If it changes a previous decision, preserve enough history to explain
-   what was replaced and why.
-4. Do not allow old screenshots, old code, or old chat discussions to
-   silently override the current decision record.
+3. If it changes a previous decision, preserve enough history to explain what was replaced and why.
+4. Do not allow old screenshots, old code, or old chat discussions to silently override the current decision record.
+
+## Code preservation rule
+
+When modifying an approved Lurre page:
+
+- Use the current approved source file as the master.
+- Change only what the task requires.
+- Preserve existing CSS, HTML structure, content, and responsive behavior unless explicitly instructed otherwise.
+- Do not silently reformat or simplify the entire file.
+- Do not treat a shorter rewritten file as equivalent without verification.
+- When a complete replacement is requested, provide the complete copy/paste source code directly in the conversation.
+
+Do not substitute a downloadable HTML file or partial code snippet when complete copy/paste code has been requested.
 
 ---
 
 # 65. RETIRED / SUPERSEDED MASTER DECISIONS
 
-This section exists to prevent old Lurre concepts from being
-accidentally resurrected.
+This section exists to prevent old Lurre concepts from being accidentally resurrected.
 
 ## Retired: Lurre.co as primarily an Etsy / Lurre Studio website
 
@@ -1449,8 +1515,7 @@ Replaced by:
 
 **Lurre as the umbrella brand for multiple projects.**
 
-Lurre Studio remains part of Lurre but is no longer the identity of the
-entire parent site.
+Lurre Studio remains part of Lurre but is no longer the identity of the entire parent site.
 
 ## Retired: Header "Explore Lurre →" button
 
@@ -1458,33 +1523,57 @@ Replaced by:
 
 **HOME · PROJECTS · ABOUT · CONNECT**
 
-Contextual Explore Lurre calls-to-action may still be used within page
-content.
+Contextual Explore Lurre calls-to-action may still be used within page content.
+
+## Superseded: No finalized Lurre share image
+
+Replaced October 9, 2026 by:
+
+**Lurre_SharingSite_hero1.png**
+
+The image is deployed and confirmed working in iMessage.
+
+The separate Buttondown share-image setting remains unverified.
 
 ---
 
 # 66. CURRENT MASTER PRIORITIES
 
+**Updated October 9, 2026**
+
 Current Lurre parent-level priorities:
 
-1. Finish and deploy the updated Lurre.co site.
-2. Make clean `/confirm` and `/welcome` production routes work.
-3. Verify the complete Buttondown subscription flow.
-4. Verify subscriber interest/signup-source metadata.
-5. Establish project-level `docs/DECISIONS.md` files.
-6. Add Lurre Privacy & Disclosure.
-7. Resolve Lurre Microsoft 365 / Global Admin email issue.
-8. Configure `lisalurre@lurre.co` as the long-term Lurre sender when
-   email administration is available.
-9. Add social/share assets only when intentionally designed.
-10. Continue developing each child project independently under the
-    Lurre umbrella.
+1. Complete a fresh-subscriber Buttondown test.
+2. Verify subscriber interest and signup-source metadata.
+3. Verify production clean routes for `/confirm` and `/welcome`.
+4. Complete a final mobile walkthrough of Home, Connect, Confirm, and Welcome.
+5. Resolve the Microsoft 365 / Global Admin email issue.
+6. Establish and verify the intended Lurre email addresses.
+7. Configure the long-term Buttondown sender when email administration is available.
+8. Create and publish Lurre Privacy & Disclosure after the contact-email dependency is resolved.
+9. Establish or maintain project-level `docs/DECISIONS.md` files.
+10. Continue developing each child project independently under the Lurre umbrella.
+
+## Completed since October 5
+
+- Lurre parent site deployed.
+- Custom Lurre website social-sharing image created.
+- Open Graph / social-preview metadata added.
+- Social-sharing image pushed to GitHub and deployed through Vercel.
+- Correct Lurre image confirmed in iMessage.
+- Approved Home design preserved.
+
+Do not reopen completed site work without a specific issue or new decision.
 
 ---
 
 # 67. CURRENT DEPLOYMENT CHECKLIST
 
-Before the next Lurre production push:
+**Updated October 9, 2026**
+
+This checklist distinguishes completed implementation from outstanding verification.
+
+## Site implementation
 
 - [x] Home header Explore button removed
 - [x] Connect header Explore button removed
@@ -1500,50 +1589,97 @@ Before the next Lurre production push:
 - [x] Buttondown form no longer intentionally opens a new tab
 - [x] Confirm page created
 - [x] Welcome page created
+- [x] Lurre social-sharing image created
+- [x] Home social-sharing metadata added
+
+## Production deployment
+
+- [x] Lurre website deployed through GitHub / Vercel
+- [x] October 9 sharing-image commit pushed to GitHub
+- [x] Sharing-image production deployment verified
+- [x] Public social-sharing image accessible
+- [x] Correct Lurre iMessage preview confirmed
+
+## Outstanding verification
+
 - [ ] Configure/verify clean `/confirm` route
 - [ ] Configure/verify clean `/welcome` route
-- [ ] Review local site one final time
-- [ ] Stage current files
-- [ ] Commit changes
-- [ ] Push GitHub `main`
-- [ ] Verify Vercel deployment
-- [ ] Test live Home
-- [ ] Test live Connect
-- [ ] Test live Confirm
-- [ ] Test live Welcome
-- [ ] Test full live Buttondown subscription flow
-- [ ] Verify subscriber metadata
+- [ ] Complete final live mobile walkthrough
+- [ ] Verify live Home navigation
+- [ ] Verify live Connect experience
+- [ ] Verify live Confirm experience
+- [ ] Verify live Welcome experience
+- [ ] Test full live Buttondown subscription flow with a fresh subscriber
+- [ ] Verify subscriber signup-source metadata
+- [ ] Verify subscriber interest metadata
+- [ ] Confirm newsletter sender and reply-to behavior after Microsoft resolution
+
+The completed October 9 deployment does not automatically verify every newsletter or mobile function.
 
 ---
 
 # 68. FUTURE MASTER TASKS
 
-Not required for the current deployment:
+**Updated October 9, 2026**
 
+## Privacy & contact
+
+- [ ] Resolve Microsoft 365 Global Admin issue
+- [ ] Establish/verify `lisalurre@lurre.co`
+- [ ] Establish/verify `hello@lurre.co`
+- [ ] Finalize privacy contact email
 - [ ] Create Lurre Privacy & Disclosure page
 - [ ] Add Privacy & Disclosure footer link
-- [ ] Create intentional Lurre social/share image
-- [ ] Add Buttondown share image
-- [ ] Finalize Lurre-level social links
-- [ ] Resolve Microsoft 365 Global Admin issue
-- [ ] Establish `lisalurre@lurre.co`
-- [ ] Establish/verify `hello@lurre.co`
+
+## Newsletter
+
+- [ ] Complete fresh-subscriber test
+- [ ] Verify subscriber metadata
 - [ ] Configure Buttondown custom sender/domain when appropriate
+- [ ] Verify Buttondown share-image setting
 - [ ] Revisit enhanced Buttondown email styling only if worthwhile
+
+## Branding & discovery
+
+- [x] Create intentional Lurre website social/share image
+- [x] Deploy Lurre social-preview metadata
+- [x] Confirm correct iMessage sharing preview
+- [ ] Finalize Lurre-level social links
+- [ ] Add Buttondown share image if appropriate
+
+## Documentation & development
+
+- [ ] Complete final mobile website review
+- [ ] Verify clean production routes
 - [ ] Create/maintain project-specific decision records
+- [ ] Continue cross-project architecture and learning without prematurely coupling projects
 
 ---
 
 # 69. CHANGE LOG
 
+## October 9, 2026
+
+- Updated the Lurre Master Decisions document.
+- Finalized the Lurre website social-sharing image.
+- Established `Lurre_SharingSite_hero1.png` as the canonical website share asset.
+- Added Open Graph and Twitter/X preview metadata to the Home page.
+- Confirmed the correct Lurre image appears in iMessage.
+- Documented the GitHub sync issue that initially prevented the new image from appearing publicly.
+- Clarified that local commits must be pushed before Vercel can deploy them.
+- Added the sharing image to the approved asset inventory.
+- Updated the deployment checklist to distinguish confirmed deployment from outstanding testing.
+- Corrected the Home hero Explore Lurre CTA documentation.
+- Confirmed Privacy & Disclosure remains planned but on hold pending Microsoft 365 / Global Admin resolution.
+- Preserved Buttondown share-image configuration as a separate outstanding task.
+- Added the approved-code preservation rule for future website edits.
+
 ## October 5, 2026
 
 - Created the Lurre Master `docs/DECISIONS.md`.
 - Established Lurre as the umbrella/parent brand in the decision record.
-- Defined the relationship between Lurre, Meet on the Porch, Sadie's
-  World, and Lurre Studio.
-- Established that each major child project maintains its own
-  `docs/DECISIONS.md`.
+- Defined the relationship between Lurre, Meet on the Porch, Sadie's World, and Lurre Studio.
+- Established that each major child project maintains its own `docs/DECISIONS.md`.
 - Recorded the current Lurre.co architecture and approved visual system.
 - Recorded the shared navigation decision.
 - Recorded current Buttondown/newsletter infrastructure.
